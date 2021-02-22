@@ -1,59 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Loopstudios landing page</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  About
-  Careers
-  Events
-  Products
-  Support
+		<title>Frontend Mentor | Loopstudios landing page</title>
 
-  Immersive experiences that deliver
+		<link rel="stylesheet" href="assets/variables.css" />
+		<link rel="stylesheet" href="assets/reset.css" />
+		<link
+			rel="stylesheet"
+			href="assets/styles.css"
+			media="screen and (min-width: 600px)"
+		/>
+		<link
+			rel="stylesheet"
+			href="assets/styles-mobile.css"
+			media="screen and (max-width: 600px)"
+		/>
+	</head>
+	<body>
+		<header>
+			<img
+				src="images/logo.svg"
+				alt="Loopstudios logo"
+				class="header__logo"
+			/>
+			<input
+				type="checkbox"
+				name="Hamburger"
+				id="checkbox-hamburger"
+				class="header__checkbox"
+			/>
+			<label for="checkbox-hamburger" class="header__label">
+				<img
+					src="images/icon-hamburger.svg"
+					alt="Hamburger button"
+					class="header__label__hamburger"
+				/>
+				<img
+					src="images/icon-close.svg"
+					alt="Close button"
+					class="header__label__close"
+				/>
+				<nav class="header__nav">
+					<ul class="header__nav__list">
+						<li class="nav__list__item">
+							<a href="" class="nav__link">About</a>
+							<span class="nav__line"></span>
+						</li>
+						<li class="nav__list__item">
+							<a href="" class="nav__link">Careers</a>
+							<span class="nav__line"></span>
+						</li>
+						<li class="nav__list__item">
+							<a href="" class="nav__link">Events</a>
+							<span class="nav__line"></span>
+						</li>
+						<li class="nav__list__item">
+							<a href="" class="nav__link"> Products </a>
+							<span class="nav__line"></span>
+						</li>
+						<li class="nav__list__item">
+							<a href="" class="nav__link">Support</a>
+							<span class="nav__line"></span>
+						</li>
+					</ul>
+				</nav>
+			</label>
+		</header>
 
-  The leader in interactive VR
+		<main>
+			<section id="hero">
+				<img
+					src="images/desktop/image-hero.jpg"
+					alt="Hero background"
+					class="hero__img__desktop"
+				/>
+				<img
+					src="images/mobile/image-hero.jpg"
+					alt="Hero background"
+					class="hero__img__mobile"
+				/>
+				<h1 class="hero__title">Immersive experiences that deliver</h1>
+			</section>
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
+			<section id="leader">
+				<img
+					src="images/desktop/image-interactive.jpg"
+					alt="Man discovering VR"
+					class="leader__img__desktop"
+				/>
+				<img
+					src="images/mobile/image-interactive.jpg"
+					alt="Man discovering VR"
+					class="leader__img__mobile"
+				/>
+				<div class="leader__description">
+					<h2 class="leader__title">The leader in interactive VR</h2>
+					<p class="leader__text">
+						Founded in 2011, Loopstudios has been producing
+						world-class virtual reality projects for some of the
+						best companies around the globe. Our award-winning
+						creations have transformed businesses through digital
+						experiences that bind to their brand.
+					</p>
+				</div>
+			</section>
 
-  Our creations
+			<section id="creations">
+				<div class="creations__header">
+					<h2 class="creations__header__title">Our Creations</h2>
+					<button class="creations__header__button">See All</button>
+				</div>
+				<ul class="creations__grid">
+					<li>
+						<img
+							src="images/desktop/image-deep-earth.jpg"
+							alt="Earth Photo"
+							class="creation__img__desktop"
+						/><img
+							src="images/mobile/image-deep-earth.jpg"
+							alt="Earth Photo"
+							class="creation__img__mobile"
+						/>
+						<h3 class="creation__title">Deep earth</h3>
+					</li>
+					<li>
+						<img
+							src="images/desktop/image-night-arcade.jpg"
+							alt="Arcade Photo"
+							class="creation__img__desktop"
+						/><img
+							src="images/mobile/image-night-arcade.jpg"
+							alt="Arcade Photo"
+							class="creation__img__mobile"
+						/>
+						<h3 class="creation__title">Night arcade</h3>
+					</li>
+					<li>
+						<img
+							src="images/desktop/image-soccer-team.jpg"
+							alt="Soccer Photo"
+							class="creation__img__desktop"
+						/><img
+							src="images/mobile/image-soccer-team.jpg"
+							alt="Soccer Photo"
+							class="creation__img__mobile"
+						/>
+						<h3 class="creation__title">Soccer team VR</h3>
+					</li>
+					<li>
+						<img
+							src="images/desktop/image-grid.jpg"
+							alt="Grid Photo"
+							class="creation__img__desktop"
+						/><img
+							src="images/mobile/image-grid.jpg"
+							alt="Grid Photo"
+							class="creation__img__mobile"
+						/>
+						<h3 class="creation__title">The grid</h3>
+					</li>
+					<li>
+						<img
+							src="images/desktop/image-from-above.jpg"
+							alt="Roads from above photo"
+							class="creation__img__desktop"
+						/><img
+							src="images/mobile/image-from-above.jpg"
+							alt="Roads from above photo"
+							class="creation__img__mobile"
+						/>
+						<h3 class="creation__title">From up above VR</h3>
+					</li>
+					<li>
+						<img
+							src="images/desktop/image-pocket-borealis.jpg"
+							alt="Boreals Photo"
+							class="creation__img__desktop"
+						/><img
+							src="images/mobile/image-pocket-borealis.jpg"
+							alt="Boreals Photo"
+							class="creation__img__mobile"
+						/>
+						<h3 class="creation__title">Pocket borealis</h3>
+					</li>
+					<li>
+						<img
+							src="images/desktop/image-curiosity.jpg"
+							alt="Curiosity Photo"
+							class="creation__img__desktop"
+						/><img
+							src="images/mobile/image-curiosity.jpg"
+							alt="Curiosity Photo"
+							class="creation__img__mobile"
+						/>
+						<h3 class="creation__title">The curiosity</h3>
+					</li>
+					<li>
+						<img
+							src="images/desktop/image-fisheye.jpg"
+							alt="Fisheye Photo"
+							class="creation__img__desktop"
+						/><img
+							src="images/mobile/image-fisheye.jpg"
+							alt="Fisheye Photo"
+							class="creation__img__mobile"
+						/>
+						<h3 class="creation__title">Make it fisheye</h3>
+					</li>
+				</ul>
+				<button class="creations__button__mobile">See all</button>
+			</section>
+		</main>
 
-  See all
+		<footer>
+			<div class="footer__top">
+				<img
+					src="images/logo.svg"
+					alt="Loopstudios logo"
+					class="footer__logo"
+				/>
+				<ul class="footer__socials">
+					<li class="footer__social">
+						<img
+							src="images/icon-facebook.svg"
+							alt="Facebook Logo"
+						/>
+						<span></span>
+					</li>
+					<li class="footer__social">
+						<img src="images/icon-twitter.svg" alt="Twitter Logo" />
+						<span></span>
+					</li>
+					<li class="footer__social">
+						<img
+							src="images/icon-pinterest.svg"
+							alt="Pinterest Logo"
+						/>
+						<span></span>
+					</li>
+					<li class="footer__social">
+						<img
+							src="images/icon-instagram.svg"
+							alt="Instagram Logo"
+						/>
+						<span></span>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__bottom">
+				<nav class="header__nav">
+					<ul class="header__nav__list">
+						<li class="nav__list__item">
+							<a href="" class="nav__link">About</a>
+							<span class="nav__line"></span>
+						</li>
+						<li class="nav__list__item">
+							<a href="" class="nav__link">Careers</a>
+							<span class="nav__line"></span>
+						</li>
+						<li class="nav__list__item">
+							<a href="" class="nav__link">Events</a>
+							<span class="nav__line"></span>
+						</li>
+						<li class="nav__list__item">
+							<a href="" class="nav__link"> Products </a>
+							<span class="nav__line"></span>
+						</li>
+						<li class="nav__list__item">
+							<a href="" class="nav__link">Support</a>
+							<span class="nav__line"></span>
+						</li>
+					</ul>
+				</nav>
+				<ul class="footer__socials">
+					<li class="footer__social">
+						<img
+							src="images/icon-facebook.svg"
+							alt="Facebook Logo"
+						/>
+						<span></span>
+					</li>
+					<li class="footer__social">
+						<img src="images/icon-twitter.svg" alt="Twitter Logo" />
+						<span></span>
+					</li>
+					<li class="footer__social">
+						<img
+							src="images/icon-pinterest.svg"
+							alt="Pinterest Logo"
+						/>
+						<span></span>
+					</li>
+					<li class="footer__social">
+						<img
+							src="images/icon-instagram.svg"
+							alt="Instagram Logo"
+						/>
+						<span></span>
+					</li>
+				</ul>
+				<p class="footer__copy">
+					© 2021 Loopstudios. All rights reserved.
+				</p>
+			</div>
+		</footer>
 
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<div class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				Frontend Mentor</a
+			>. Coded by
+			<a
+				href="https://www.pierrechatard.fr"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				Pierre</a
+			>.
+		</div>
+	</body>
 </html>

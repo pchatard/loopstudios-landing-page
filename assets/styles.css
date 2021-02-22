@@ -1,0 +1,267 @@
+body {
+	max-width: 1440px;
+	margin: 0 auto;
+	position: relative;
+}
+
+header {
+	position: absolute;
+	z-index: 10;
+	top: 64px;
+	width: 100%;
+
+	padding-left: 164px;
+	padding-right: 166px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__checkbox,
+.header__label,
+.hero__img__mobile,
+.leader__img__mobile,
+.creation__img__mobile,
+.creations__button__mobile,
+.footer__bottom .footer__socials {
+	display: none;
+}
+
+.header__nav__list {
+	list-style: none;
+	display: flex;
+	font-family: "Alata";
+	color: var(--white);
+}
+
+.nav__list__item {
+	margin-left: 34px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer .nav__list__item {
+	margin: 0;
+}
+
+.nav__link,
+.nav__link:visited {
+	padding-bottom: 14px;
+	text-decoration: none;
+	color: inherit;
+}
+
+.nav__line {
+	width: 24px;
+	height: 2px;
+	opacity: 0;
+	background-color: var(--white);
+}
+
+.nav__list__item:hover .nav__line {
+	opacity: 1;
+}
+
+#hero {
+	position: relative;
+}
+
+.hero__title {
+	position: absolute;
+	bottom: 145px;
+	left: 164px;
+	border: 2px solid var(--white);
+	color: var(--white);
+	font-family: "Josefin Sans";
+	text-transform: uppercase;
+	padding-left: 43px;
+	padding-top: 40px;
+	padding-bottom: 44px;
+	padding-right: 101px;
+	font-size: 50px;
+	width: 652px;
+	letter-spacing: 12px;
+}
+
+#leader {
+	position: relative;
+	margin: 160px auto 186px auto;
+	max-width: 1114px;
+}
+
+.leader__description {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: var(--white);
+	padding-left: 99px;
+	padding-top: 99px;
+	width: 540px;
+}
+
+.leader__title {
+	font-size: 34px;
+	font-family: "Josefin Sans";
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	margin-bottom: 45px;
+}
+
+.leader__text {
+	font-size: 15px;
+	font-family: "Alata";
+	color: var(--dark-gray);
+	line-height: 25px;
+	padding-bottom: 3px;
+}
+
+#creations {
+	max-width: 1114px;
+	margin: 0 auto;
+	margin-bottom: 184px;
+}
+
+.creations__header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 83px;
+}
+
+.creations__header__title {
+	font-size: 34px;
+	font-family: "Josefin Sans";
+	text-transform: uppercase;
+	letter-spacing: 8px;
+}
+
+.creations__header__button {
+	height: 42px;
+	border: 2px solid var(--very-dark-gray);
+	border-radius: 1px;
+	background: none;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-family: "Alata";
+	letter-spacing: 5px;
+	padding-left: 38px;
+	padding-right: 42px;
+	cursor: pointer;
+}
+
+.creations__header__button:hover {
+	background-color: var(--black);
+	color: var(--white);
+}
+
+.creations__grid {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.creations__grid li {
+	position: relative;
+	width: auto;
+	margin-bottom: 30px;
+}
+
+.creations__grid li:hover .creation__img__desktop {
+	filter: brightness(0.15) invert(1);
+}
+
+.creation__title {
+	position: absolute;
+	width: 100%;
+	padding: 0 40px;
+	bottom: 40px;
+	font-size: 23px;
+	line-height: 32px;
+	font-family: "Josefin Sans";
+	letter-spacing: 7px;
+	color: var(--white);
+	text-transform: uppercase;
+	z-index: 5;
+}
+
+.creations__grid li:hover .creation__title {
+	color: var(--black);
+}
+
+footer {
+	padding: 0 165px 0 164px;
+	background-color: var(--black);
+	height: 160px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.footer__top {
+	padding-bottom: 24px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__socials {
+	display: flex;
+	list-style-type: none;
+	align-items: baseline;
+}
+
+.footer__social {
+	margin-left: 17px;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.footer__socials img {
+	margin-bottom: 8px;
+}
+
+.footer__socials span {
+	width: 24px;
+	height: 2px;
+	opacity: 0;
+	background-color: var(--white);
+}
+
+.footer__social:hover span {
+	opacity: 1;
+}
+
+.footer__bottom {
+	display: flex;
+	justify-content: space-between;
+	font-family: "Alata";
+}
+
+.footer__bottom nav ul {
+	display: flex;
+	color: var(--white);
+	list-style-type: none;
+}
+
+.footer__bottom li {
+	margin-right: 34px;
+}
+
+.footer__copy {
+	color: var(--dark-gray);
+}
+
+.attribution {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: var(--white);
+	z-index: 10;
+	font-family: "Alata";
+}
+
+.attribution a {
+	text-decoration: none;
+	color: blue;
+}
